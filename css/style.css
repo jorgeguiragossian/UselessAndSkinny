@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.jumbotron {
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.display-4 {
+    font-size: 34px; /* Adjust the font size as needed */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bg-overlay {
+    position: relative;
+    background-image: url('../images/spalshpage.png'); /* Corrected file name */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1000px;
+}
+
+.bg-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.bg-overlay .container {
+    padding-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.articles { 
+    padding: 30px 15px;
+}
