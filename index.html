@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" height="50"></a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron jumbotron-fluid bg-overlay">
+            <div class="container">
+                <p class="display-4">This site was started by two inquisitive, albeit miseducated, autodidacts on a quest to unravel the infinitely complex modern world. Fueled by a genuine curiosity for knowledge, and a fearless commitment to free speech, we invite listeners and readers to navigate the labyrinthine tapestry of history, culture, and science as we seek to deepen our understanding and broaden our tainted perspectives. We do not come from academia. We do not pretend to be experts. Armed with nothing more than an open mind and the moral tenet that all humans ought to be treated equally and with dignity, we roam the vast information landscape to advance dialog and promote peace.</p>
+            </div>
+        </div>
+    </header>
+    
+
+    <section class="video-carousel">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <!--<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <iframe class="d-block w-100" height="700px" src="https://www.youtube.com/embed/hLhyIvwSkx4?si=0sPb26NYYRby3ah9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                <div class="carousel-caption d-none d-md-block">
+                  <h5>Can Kanye be President?.</h5>
+                  <p>This video asks the age-old question: Can a ego-centric celebrity with no political experience and a deep misunderstanding of foreign, domestic, and economic affairs rise to be President of the U.S.?</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <iframe class="d-block w-100" height="700px" src="https://www.youtube.com/embed/1QKNx4lZaBI?si=0tbsmh7WRzC2-ZPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                <div class="carousel-caption d-none d-md-block">
+                  <h5>Prequel (Rachel Maddow) & Fascism Feat. Skinny Pete</h5>
+                  <p>Exploring Rachel Maddow's latest book about Fascism in America leading up to WWII.</p>
+                </div>
+              </div>
+              <!--<div class="carousel-item">
+                <iframe class="d-block w-100" height="500px" src="https://www.youtube.com/embed/1QKNx4lZaBI?si=0tbsmh7WRzC2-ZPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                <div class="carousel-caption d-none d-md-block">
+                  <h5>Prequel (Rachel Maddow) & Fascism Feat. Skinny Pete</h5>
+                  <p>Exploring Rachel Maddow's latest book about Fascism in America leading up to WWII.</p>
+                </div>
+              </div>-->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>          
+    </section>
+
+    <section class="articles">
+        <div class="row">
+            <div class="col-sm-4 mb-3 mb-sm-0">
+              <div class="text-bg-primary card">
+                <div class="card-body">
+                  <h5 class="card-title">Essay 1 title</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Read</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-bg-secondary card">
+                <div class="card-body">
+                  <h5 class="card-title">Essay 2 title</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-secondary">Read</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="text-bg-success card">
+                  <div class="card-body">
+                    <h5 class="card-title">Essay 3 title</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-success">Read</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </section>
+
+    <footer class="footer bg-light">
+        <div class="container">
+            <p><a href="#">About</a></p>
+            <p><a href="#">Contact Us</a></p>
+            <p>&copy; Made with ❤️ in 2024</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
