@@ -1,5 +1,8 @@
-body {
-    font-family: Arial, sans-serif;
+
+
+.navbar-brand img {
+    height: 100px; /* Initial height */
+    transition: height 0.3s; /* Smooth transition for height change */
 }
 
 .jumbotron {
@@ -9,8 +12,15 @@ body {
 }
 
 .display-4 {
-    font-size: 34px; /* Adjust the font size as needed */
-    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 20%;
+    font-size: 42px; /* Adjust the font size as needed */
+    font-family: 'Verdana', san serif;
+}
+
+.header-buttons {
+    text-align: center;
+    margin-top: 20px; /* Adjust spacing from the text above */
 }
 
 .bg-overlay {
@@ -29,7 +39,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
@@ -43,6 +53,18 @@ body {
     padding: 20px 20px;
 }
 
+.video-carousel {
+    width: 75%;
+    margin: 0 auto; /* Center the carousel */
+}
+
+.video-carousel iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Adjust this based on your video's aspect ratio */
+}
+
+
 .articles { 
     padding: 30px 15px;
 }
@@ -50,4 +72,20 @@ body {
 .footer {
     padding: 20px 0;
     text-align: center;
+}
+
+.contact-logo {
+    /* Centering the image vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: /* specify a height for the div */;
+}
+
+.contact-logo img {
+    /* Resizing and centering the image */
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
 }
