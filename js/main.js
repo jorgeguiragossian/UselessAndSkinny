@@ -1,5 +1,11 @@
 // Custom JavaScript code can go here
 
+import { Amplify } from 'aws-amplify';
+import config from './aws-exports.js';
+
+Amplify.configure(config);
+
+
 // Example: Initializing a Bootstrap Carousel
 $(document).ready(function(){
     $('.carousel').carousel({
@@ -16,3 +22,18 @@ window.addEventListener('scroll', function() {
         logo.style.height = '100px'; // Larger size when at the top of the page
     }
 });
+
+export default function App() {
+    return (
+      <Authenticator socialProviders={['amazon', 'apple', 'facebook', 'google']}>
+        {({ signOut, user }) => (
+          <main>
+            <h1>Hello {user.username}</h1>
+            <button onClick={signOut}>Sign out</button>
+          </main>
+        )}
+      </Authenticator>
+    );
+  }
+
+ 
